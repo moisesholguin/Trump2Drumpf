@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Trump2Drumpf",
+  "description": "Replaces Trump with Drumpf",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+
+      "js": [
+        "content.js"
+      ],
+
+      "run_at": "document_end"
+    }
+  ]
+}
